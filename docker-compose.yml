@@ -1,0 +1,11 @@
+version: "3"
+services:
+    app:
+        container_name: "uec_tl_markov"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: uec_tl_markov
+        volumes:
+            - ./:/home/uec_tl_markov
+        tty: true
