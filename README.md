@@ -99,3 +99,7 @@ $ python testing_model.py -i sample_model.json -c 5
 ```
 
 `私は電通大が好きでした`という学習データには存在しない文章の生成を確認できました！
+
+## UEC18LT会登壇資料
+
+[電通大生の呟きを基に電通大生を錬成してみた](https://drive.google.com/file/d/1ikgyyDTF_J_rWt-zv61FHH-gi1kVQL89/view?usp=sharing)
