@@ -77,10 +77,10 @@ $ cat sample_output.txt
 
 ## モデルの学習
 
-次に`sample_output.txt`の各行を学習データとして, マルコフ連鎖モデルを作成します.
+次に`sample_output.txt`の各行を学習データとして, N階マルコフ連鎖(N=2)のモデルを作成します.
 
 ```bash
-$ python training_model.py -i sample_output.txt -o sample_model.json
+$ python training_model.py -i sample_output.txt -o sample_model.json -s 2
 ```
 
  学習したモデルは`sample_model.json`として保存しました.
