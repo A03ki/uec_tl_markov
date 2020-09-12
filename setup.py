@@ -18,7 +18,8 @@ setup_args = {
         "tests": ["pytest"],
         "twitter": ["tweepy"]
     },
-    "packages": packages
+    "packages": packages,
+    "classifiers": ["License :: OSI Approved :: MIT License"]
 }
 
 setup(**setup_args)
