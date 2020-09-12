@@ -9,6 +9,7 @@ setup_args = {
     "description": "@uec_tlに使用するマルコフ連鎖による文章生成とテキスト処理のためのパッケージ",
     "license": "MIT License",
     "author": "Aki(@puman03)",
+    "author_email": "a03ki04@gmail.com",
     "url": "https://github.com/A03ki/uec_tl_markov",
     "python_requires": "==3.6.*",
     "install_requires": ["emoji", "markovify", "neologdn", "pyyaml"],
