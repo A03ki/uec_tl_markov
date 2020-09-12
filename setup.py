@@ -19,7 +19,10 @@ setup_args = {
         "twitter": ["tweepy"]
     },
     "packages": packages,
-    "classifiers": ["License :: OSI Approved :: MIT License"]
+    "classifiers": [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.6"
+    ],
 }
 
 setup(**setup_args)
