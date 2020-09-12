@@ -24,6 +24,7 @@ setup_args = {
         "Programming Language :: Python :: 3.6",
         "Natural Language :: Japanese"
     ],
+    "keywords": "uectl uec markov"
 }
 
 setup(**setup_args)
