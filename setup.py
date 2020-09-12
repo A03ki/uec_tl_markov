@@ -17,8 +17,7 @@ setup_args = {
         "tests": ["pytest"],
         "twitter": ["tweepy"]
     },
-    "packages": packages,
-    "package_data": {"uectl": ["data/orthographic_variants.yml"]},
+    "packages": packages
 }
 
 setup(**setup_args)
