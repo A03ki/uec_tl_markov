@@ -1,11 +1,12 @@
 # UECTL
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uectl?color=004D80)](https://www.python.org)
+[![PyPI Version](https://img.shields.io/pypi/v/uectl?color=B51700)](https://pypi.org/project/uectl/)
+[![GitHub LICENSE](https://img.shields.io/github/license/A03ki/uec_tl_markov?color=00AB8E)](https://github.com/A03ki/uec_tl_markov/blob/master/LICENSE)
 
 [@uec_tl](https://twitter.com/uec_tl)に使用するマルコフ連鎖モデルとテキスト処理のためのパッケージです.
 
 
 ## ダウンロードとインストール
-
-Python 3.6 が必要です.
 
 uectl本体:
 
