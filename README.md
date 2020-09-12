@@ -1,4 +1,5 @@
 # UECTL
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uectl?color=004D80)](https://www.python.org)
 
 [@uec_tl](https://twitter.com/uec_tl)に使用するマルコフ連鎖モデルとテキスト処理のためのパッケージです.
 
