@@ -15,8 +15,7 @@ RUN apt-get update \
 WORKDIR /home/uec_tl_markov
 
 COPY ./uectl ./uectl
-COPY ./setup.py ./setup.py
-COPY ./README.md ./README.md
+COPY ./setup.py ./README.md ./
 
 RUN pip install --progress-bar off . \
     && pip install --progress-bar off ".[preprocessing]" \
