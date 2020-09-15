@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get install -y swig \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-    && python -m pip install --upgrade pip \
+    && python -m pip install -U pip \
     && pip install --progress-bar off -U setuptools
 
 WORKDIR /home/uec_tl_markov
