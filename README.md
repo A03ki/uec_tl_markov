@@ -1,28 +1,24 @@
 # UECTL
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uectl?color=004D80)](https://www.python.org)
+[![PyPI Version](https://img.shields.io/pypi/v/uectl?color=B51700)](https://pypi.org/project/uectl/)
+[![GitHub LICENSE](https://img.shields.io/github/license/A03ki/uec_tl_markov?color=00AB8E)](https://github.com/A03ki/uec_tl_markov/blob/master/LICENSE)
 
 [@uec_tl](https://twitter.com/uec_tl)に使用するマルコフ連鎖モデルとテキスト処理のためのパッケージです.
 
 
-## ダウンロードとインストール
-
-Python 3.6 が必要です.
+## インストール
 
 uectl本体:
 
 ```bash
-$ git clone https://github.com/A03ki/uec_tl_markov.git
-$ cd uec_tl_markov
-$ pip installl -e .
+$ pip install uectl
 ```
 
 uectl本体+前処理用(MeCabが必要):
 
 ```bash
-$ git clone https://github.com/A03ki/uec_tl_markov.git
-$ cd uec_tl_markov
-$ pip installl -e ".[preprocessing]"
+$ pip install uectl[preprocessing]
 ```
-
 
 ## Dockerによる環境構築
 マルコフ連鎖で文章を学習させる際, 文章を単語ごとに分ける必要があります.  この単語ごとに区切る処理はMeCabというソフトウェアを使います. MeCabを各OSに応じて導入するのは少し面倒なので, Dockerで環境構築できるようにしました.  ちなみにMeCabが必要なのは前処理の項だけです. uectl本体だけでも, 前処理済みのサンプルファイル`sample_output.txt`を使って, モデルの学習と文章生成を行うことができます.

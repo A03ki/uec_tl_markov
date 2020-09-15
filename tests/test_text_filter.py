@@ -64,6 +64,12 @@ def test_replace_orthographic_variants_rui():
     assert replace_orthographic_variants(text) == expected
 
 
+def test_replace_orthographic_variants_gpa():
+    text = "これらはgpaとGPAです"
+    expected = "これらはGPAとGPAです"
+    assert replace_orthographic_variants(text) == expected
+
+
 def test_format_text_brackets_full_characters():
     "全角括弧と全角引用符はnormalize.normalizeで半角に変換し, _remove_brackets_and_quotationsで除去"
     text = "（私は”人間’だ）"
