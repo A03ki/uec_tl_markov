@@ -9,15 +9,12 @@ RUN apt-get update \
     && apt-get install -y swig \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-    && python -m pip install --upgrade pip \
+    && python -m pip install -U pip \
     && pip install --progress-bar off -U setuptools
 
 WORKDIR /home/uec_tl_markov
 
 COPY ./uectl ./uectl
-COPY ./setup.py ./setup.py
-COPY ./README.md ./README.md
+COPY ./setup.py ./README.md ./
 
-RUN pip install --progress-bar off . \
-    && pip install --progress-bar off ".[preprocessing]" \
-    && pip install --progress-bar off ".[tests]"
+RUN pip install --progress-bar off ".[preprocessing, tests]"
