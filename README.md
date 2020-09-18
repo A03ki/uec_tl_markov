@@ -33,7 +33,7 @@ $ docker-compose up -d
 ### コンテナに移動
 
 ```bash
-$ docker exec -it uec_tl_markov /bin/sh -c "[ -e /bin/bash ] && /bin/bash || /bin/sh"
+$ docker-compose exec app /bin/sh -c "[ -e /bin/bash ] && /bin/bash || /bin/sh"
 root@コンテナID:/home/uec_tl_markov#
 ```
 
