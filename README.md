@@ -96,6 +96,17 @@ $ python testing_model.py -i sample_model.json -c 5
 
 `私は電通大が好きでした`という学習データには存在しない文章の生成を確認できました！
 
+文章を生成し始める単語の指定もできます. 指定する単語数は1からNのいずれかです(今回の例ではN=2). それぞれの単語は空白文字で区切る必要があります.
+
+```bash
+$ python testing_model.py -i sample_model.json -c 5 -b "電通大 が"
+電通大が好きでした
+電通大が好きでした
+電通大が好きです
+電通大が好きでした
+電通大が好きです
+```
+
 ## UEC18LT会登壇資料
 
 [電通大生の呟きを基に電通大生を錬成してみた](https://drive.google.com/file/d/1ikgyyDTF_J_rWt-zv61FHH-gi1kVQL89/view?usp=sharing)
