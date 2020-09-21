@@ -17,4 +17,4 @@ WORKDIR /home/uec_tl_markov
 COPY ./uectl ./uectl
 COPY ./setup.py ./README.md ./
 
-RUN pip install --progress-bar off -e ".[preprocessing, tests]"
+RUN pip install --progress-bar off -e ".[preprocessing, tests, bot]"
