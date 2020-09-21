@@ -1,0 +1,16 @@
+version : 1
+
+formatters :
+    default :
+        format : "%(asctime)s %(levelname)-8s %(message)s"
+
+handlers :
+    file_output :
+        class : logging.FileHandler
+        formatter : default
+        filename : twitter_bot.log
+        level : DEBUG
+
+root :
+    handlers : [file_output]
+    level : DEBUG
