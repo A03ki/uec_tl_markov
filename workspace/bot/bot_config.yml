@@ -1,0 +1,13 @@
+twitter_api:  # https://developer.twitter.comで取得したキーとトークン情報を入れる
+    api_key : "Your API key"
+    api_secret_key : "Your API secret key"
+    access_token : "Your access token"
+    access_token_secret : "Your access token secret"
+
+model: # 学習済みモデルは`workspace/bot/`の下に置く
+    filename : model.json
+
+log:
+    dirname : logs
+    filename : twitter_bot.log
+    config : logging_config.yml
