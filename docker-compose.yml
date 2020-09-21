@@ -9,3 +9,12 @@ services:
         volumes:
             - ./:/home/uec_tl_markov
         tty: true
+    bot:
+        container_name: "uec_tl_markov_bot"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: uec_tl_markov
+        volumes:
+            - ./workspace:/home/uec_tl_markov/workspace
+        tty: true
