@@ -18,3 +18,4 @@ services:
         volumes:
             - ./workspace:/home/uec_tl_markov/workspace
         tty: true
+        command: bash -c "run.sh"
