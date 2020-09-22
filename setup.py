@@ -26,7 +26,7 @@ setup_args = {
     "extras_require": {
         "preprocessing": ["mecab-python3==0.996.5"],
         "tests": ["pytest"],
-        "twitter": ["tweepy"]
+        "bot": ["tweepy"]
     },
     "packages": packages,
     "classifiers": [
