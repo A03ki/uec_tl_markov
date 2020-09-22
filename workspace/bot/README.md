@@ -73,7 +73,7 @@ $ docker-compose up -d bot
 
 コンテナ起動後, Botがツイートし始めます.
 
-#### コンテナ停止
+### コンテナ停止
 
 ```bash
 $ docker-compose stop bot
