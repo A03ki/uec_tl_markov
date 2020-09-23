@@ -13,7 +13,7 @@ packages = find_packages(exclude=["workspace"])
 
 setup_args = {
     "name": "uectl",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "@uec_tlに使用するマルコフ連鎖による文章生成とテキスト処理のためのパッケージ",
     "long_description": readme,
     "long_description_content_type": "text/markdown",
@@ -21,17 +21,19 @@ setup_args = {
     "author": "Aki(@puman03)",
     "author_email": "a03ki04@gmail.com",
     "url": "https://github.com/A03ki/uec_tl_markov",
-    "python_requires": "==3.6.*",
+    "python_requires": ">=3.6, <3.9",
     "install_requires": ["emoji", "markovify", "neologdn", "pyyaml"],
     "extras_require": {
         "preprocessing": ["mecab-python3==0.996.5"],
         "tests": ["pytest"],
-        "twitter": ["tweepy"]
+        "bot": ["tweepy"]
     },
     "packages": packages,
     "classifiers": [
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "Natural Language :: Japanese"
     ],
     "keywords": "uectl uec markov"

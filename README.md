@@ -33,7 +33,7 @@ $ docker-compose up -d
 ### コンテナに移動
 
 ```bash
-$ docker exec -it uec_tl_markov /bin/sh -c "[ -e /bin/bash ] && /bin/bash || /bin/sh"
+$ docker-compose exec app /bin/sh -c "[ -e /bin/bash ] && /bin/bash || /bin/sh"
 root@コンテナID:/home/uec_tl_markov#
 ```
 
@@ -95,6 +95,17 @@ $ python testing_model.py -i sample_model.json -c 5
 ```
 
 `私は電通大が好きでした`という学習データには存在しない文章の生成を確認できました！
+
+文章を生成し始める単語の指定もできます. 指定する単語数は1からNのいずれかです(今回の例ではN=2). それぞれの単語は空白文字で区切る必要があります.
+
+```bash
+$ python testing_model.py -i sample_model.json -c 5 -b "電通大 が"
+電通大が好きでした
+電通大が好きでした
+電通大が好きです
+電通大が好きでした
+電通大が好きです
+```
 
 ## UEC18LT会登壇資料
 
