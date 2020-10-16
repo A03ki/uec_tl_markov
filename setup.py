@@ -13,7 +13,7 @@ packages = find_packages(exclude=["workspace"])
 
 setup_args = {
     "name": "uectl",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "@uec_tlに使用するマルコフ連鎖による文章生成とテキスト処理のためのパッケージ",
     "long_description": readme,
     "long_description_content_type": "text/markdown",
@@ -29,6 +29,7 @@ setup_args = {
         "bot": ["tweepy"]
     },
     "packages": packages,
+    "include_package_data": True,
     "classifiers": [
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.6",
